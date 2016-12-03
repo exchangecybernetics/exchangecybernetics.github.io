@@ -1,0 +1,685 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+html {
+    background-color: #fff;
+}
+
+body {
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    text-align: justify;
+    padding-top: 25px;
+    margin-bottom: 200px;
+}
+
+.menu .arrow {
+    opacity: 0.4;
+}
+
+.arrow.up,
+.arrow.down {
+    display: none;
+    margin: 20px 0;
+}
+
+.menu h1 {
+    margin-top: 0;
+    font: normal 32px/1.5 'Open Sans', sans-serif;
+    color: #3F71AE;
+    padding-bottom: 16px;
+}
+
+.menu h2 {
+    color: #F05283;
+}
+
+.menu h2 a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #F05283;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font: bold 14px/1 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.menu h2 a:hover {
+    background-color: #F05283;
+    transition: 0.2s;
+    color: #fff;
+}
+
+.menu ul {
+    max-width: 600px;
+    margin: 60px auto 0;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: left;
+    background-color: #B9C1CA;
+    padding: 10px 16px;
+    border-radius: 2px;
+    opacity: 0.8;
+    font-size: 16px;
+    display: inline-block;
+    margin: 4px;
+    line-height: 1;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.menu ul li a.active {
+    background-color: #66B650;
+    pointer-events: none;
+}
+
+.menu ul li a:hover {
+    opacity: 1;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+@media (max-height:800px) {}
+
+@media (max-width: 900px) {
+    .menu {
+        padding-top: 40px;
+        margin-bottom: 80px;
+    }
+    .arrow.left,
+    .arrow.right {
+        display: none;
+    }
+    .arrow.up,
+    .arrow.down {
+        display: inline-block;
+    }
+}
+
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+    #bsaHolder {
+        display: none;
+    }
+}
+
+
+/* -- Link to Tutorialzine -- */
+
+.tz-link {
+    text-decoration: none;
+    color: #fff !important;
+    font: bold 36px Arial, Helvetica, sans-serif !important;
+}
+
+.tz-link span {
+    color: #da431c;
+}
+
+
+/* The main content */
+
+.main-content {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    font-size: medium;
+    margin: 70px 70px 40px 260px;
+}
+
+
+/* Header */
+
+header {
+    height: 100px;
+    background: url(images/IMG3.jpg) center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    font-family: 'Bungee', cursive;
+    font-size: 3.5vw;
+    text-shadow: 4px 4px 2px rgba(23, 23, 23, 0.49);
+    text-align: center;
+    color: #fff;
+    top: 0;
+    width: 100%;
+    line-height: 100px;
+    z-index: 9999;
+}
+
+
+/* The left-collapsing sidebar */
+
+.sidebar-left-collapse {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-color: #292c2f;
+    width: 180px;
+    height: 100%;
+}
+
+.sidebar-left-collapse > a {
+    display: block;
+    text-decoration: none;
+    font-family: Cookie, cursive;
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 2.6;
+    border-radius: 50%;
+    background-color: #181a1b;
+}
+
+.sidebar-left-collapse .sidebar-links {
+    margin: 30px auto;
+}
+
+.sidebar-links div > a {
+    display: block;
+    text-decoration: none;
+    margin: 0 auto 5px auto;
+    padding: 10px 0 10px 5px;
+    background-color: #35393e;
+    text-align: left;
+    color: #b3bcc5;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+.sidebar-links div.selected > a {
+    background-color: #ffffff;
+    color: #565d63;
+    line-height: 2.3;
+    margin: 0;
+}
+
+.sidebar-links div > a i.fa {
+    position: relative;
+    font-size: 20px;
+    top: 3px;
+    width: 40px;
+    text-align: center;
+}
+
+.sidebar-links div ul.sub-links {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0 0 0 30px;
+    color: #b3bcc5;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0;
+    transition: 0.4s;
+}
+
+.sidebar-links div.selected ul.sub-links {
+    max-height: 150px;
+    padding: 12px 0 12px 30px;
+}
+
+.sidebar-links div .sub-links a {
+    text-decoration: none;
+    color: #b3bcc5;
+    display: block;
+    text-align: left;
+}
+
+
+/* Link Colors */
+
+
+/* Blue Заголовок */
+
+.sidebar-links div.link-blue > a {
+    border-color: #6495ED;
+}
+
+
+/* Blue Палочка */
+
+.sidebar-links div.link-blue > a i.fa {
+    color: #6495ED;
+}
+
+
+/* Blue Подзаголовок */
+
+.sidebar-links div .sub-links .color:hover a {
+    color: #6495ED;
+}
+
+.sidebar-links div .sub-links .selected a {
+    color: #3a78e8;
+}
+
+
+/* Red Заголовок */
+
+.sidebar-links div.link-red > a {
+    border-color: #da4545;
+}
+
+
+/* Red Палочка */
+
+.sidebar-links div.link-red > a i.fa {
+    color: #da4545;
+}
+
+
+/* Red Подзаголовок */
+
+.sidebar-links div .sub-links .color2:hover a {
+    color: #da4545;
+}
+
+.sidebar-links div .sub-links .selected2 a {
+    color: #db2929;
+}
+
+
+/* Gray Заголовок */
+
+.sidebar-links div.link-gray> a {
+    border-color: #708090;
+}
+
+
+/* Gray Палочка */
+
+.sidebar-links div.link-gray> a i.fa {
+    color: #708090;
+}
+
+
+/* Gray Подзаголовок */
+
+.sidebar-links div .sub-links .color3:hover a {
+    color: #708090;
+}
+
+.sidebar-links div .sub-links .selected3 a {
+    color: #444d56;
+}
+
+
+/* Making the sidebar responsive */
+
+@media (max-width: 800px) {
+    .main-content {
+        max-width: none;
+        padding: 70px 20px;
+        margin: 40px 0 40px;
+    }
+    .menu h1 {
+        text-align: center;
+    }
+    .sidebar-left-collapse {
+        width: auto;
+        height: auto;
+        position: relative;
+        padding: 20px 0 0;
+    }
+    .sidebar-left-collapse .sidebar-links {
+        text-align: center;
+        margin: 0px auto 0;
+    }
+    .sidebar-links div {
+        display: inline-block;
+        width: 100px;
+    }
+    .sidebar-links div > a {
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        border-left: none;
+        border-top-width: 2px;
+        border-top-style: solid;
+    }
+    .sidebar-links div > a,
+    .sidebar-links div.selected > a {
+        line-height: 10px;
+    }
+    .sidebar-links div > a i.fa {
+        display: block;
+        margin: 0 auto 5px;
+    }
+    .sidebar-links div ul.sub-links {
+        display: none;
+    }
+    .sidebar-links div.selected .sub-links {
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: auto;
+        left: 0;
+        right: 0;
+    }
+    .sidebar-links div.selected .sub-links li {
+        display: inline-block;
+    }
+    .sidebar-links div.selected .sub-links a {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 13px;
+        color: #748290;
+    }
+    .rightimg1 {
+        float: right;
+        margin: 30px 0px 0px 0px;
+        width: 47%
+    }
+    .leftlist1 {
+        float: left;
+        margin: 0px 0px 0px 0px;
+        width: 50%
+    }
+}
+
+
+/* Smartphone version */
+
+@media (max-width: 450px) {
+    .main-content {
+        padding: 90px 20px;
+    }
+    .sidebar-left-collapse {
+        padding: 20px 0;
+    }
+    .sidebar-left-collapse .sidebar-links {
+        text-align: center;
+        margin: 20px auto 0;
+        position: relative;
+    }
+    .sidebar-links div {
+        display: block;
+        width: 240px;
+        margin: 0 auto 5px;
+    }
+    .sidebar-links div > a {
+        text-align: left;
+        padding: 10px 25px;
+        vertical-align: middle;
+        border-top: none;
+        border-left-width: 2px;
+        border-left-style: solid;
+    }
+    .sidebar-links div > a i.fa {
+        display: inline-block;
+        font-size: 20px;
+        width: 20px;
+        margin: 0 20px 0 0;
+    }
+    .sidebar-links div.selected .sub-links {
+        bottom: -90px;
+    }
+    .rightimg1 {
+        float: right;
+        margin: 0px 0px 0px 0px;
+        width: 100%
+    }
+    .leftlist1 {
+        float: left;
+        margin: 0px 0px 0px 0px;
+        width: 100%
+    }
+}
+
+
+/*	Removing margins and paddings from the body, so that
+    the sidebar takes the full height of the page */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.element-h1 {
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.81);
+    color: #14A0F7;
+    font-size: 60px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 51px;
+    height: 51px;
+    border: none;
+    text-indent: 100%;
+    background: url(images/icon_top.png) no-repeat right top;
+}
+
+#toTopHover {
+    background: url(images/icon_top.png) no-repeat right -51px;
+    width: 51px;
+    height: 51px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#toTop:active,
+#toTop:focus {
+    outline: none;
+}
+
+
+/* Оформление таблиц */
+
+.table_blur {
+    background: #f5ffff;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table_blur th {
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+    background: linear-gradient(#9595b6, #5a567f);
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.table_blur th:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .08));
+}
+
+.table_blur tr:nth-child(odd) {
+    background: #ebf3f9;
+}
+
+.table_blur th:first-child {
+    border-left: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+
+.table_blur th:last-child {
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+
+.table_blur td {
+    border: 1px solid #e3eef7;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.table_blur tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #a09f9d;
+}
+
+.table_blur tbody:hover tr:hover td {
+    color: #444444;
+    text-shadow: none;
+}
+
+
+/* Оформление списков */
+
+.leftlist1 {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    width: 50%
+}
+
+.rounded {
+    counter-reset: li;
+    list-style: none;
+    padding: 0;
+}
+
+.rounded a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .3s ease-out;
+}
+
+.rounded a:hover {
+    background: #E9E4E0;
+}
+
+.rounded a:hover:before {
+    transform: rotate(360deg);
+}
+
+.rounded a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #F05283;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+
+/* Оформление ссылок */
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+
+/* Подпись к изображению */
+
+.flexslider .slides p {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 5px;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 20px;
+    color: white;
+    background-color: #222222;
+    background: rgba(0, 0, 0, .9);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* Оформление картинок */
+
+img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+.leftimg {
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+.rightimg {
+    float: right;
+    margin: 0px 0px 7px 20px;
+}
+
+.rightimg1 {
+    float: right;
+    margin: 15px 0px 0px 0px;
+    width: 47%
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Образование за границей для студентов-кибернетиков</title>
+    <meta name="keywords" content="образование, экономическая кибернетика, студент, Европа, quantative methods of economics, языковые курсы, изучение языка">
+    <meta name="description" content="Студенты специальности 'Экономическая кибернетика' могут выбрать университет для обужения в ведущих университетах Европы.">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Bungee|Cookie" rel="stylesheet">
+    <link rel="icon" type="image/png" href="http://i.imgur.com/xoQFJlc.png" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>Exchange center of economic cybernetics</header>
+    <aside class="sidebar-left-collapse">
+        <div class="sidebar-links">
+            <div class="link-blue">
+                <a href="#"> <i class="fa fa-comments-o"></i>Языковые курсы </a>
+                <ul class="sub-links">
+                    <li class="color"><a href="eng.html">Англия</a></li>
+                    <li class="color"><a href="spa.html">Испания</a></li>
+                    <li class="color"><a href="pol.html">Польша</a></li>
+                </ul>
+            </div>
+            <div class="link-red">
+                <a href="#"> <i class="fa fa-graduation-cap"></i>Высшее образование </a>
+                <ul class="sub-links">
+                    <li class="color2"><a href="england.html">Англия</a></li>
+                    <li class="color2"><a href="spain.html">Испания</a></li>
+                    <li class="color2"><a href="poland.html">Польша</a></li>
+                    <li class="color2"><a href="romania.html">Румыния</a></li>
+                </ul>
+            </div>
+            <div class="link-gray selected">
+                <a href="#"> <i class="fa fa-puzzle-piece"></i>Информация о нас</a>
+                <ul class="sub-links">
+                    <li class="color3"><a href="company.html">О компании</a></li>
+                    <li class="selected3"><a href="contacts.html">Наши контакты</a></li>
+                    <li class="color3"><a href="daria.html">Об авторе сайта</a></li>
+                </ul>
+            </div>
+            <div class="link-gray">
+                <a href="index.html"> <i class="fa fa-home"></i>Главная страница</a>
+            </div>
+        </div>
+    </aside>
+    <div class="main-content">
+        <div class="menu">
+            <h2><b>Наши контакты:</b></h2>
+            <table width=100%>
+                <tr>
+                    <td width=5%><i class="fa fa-envelope-o"></i></td>
+                    <td width=10%><b>E-mail</b>:</td>
+                    <td widtx=50%> dremlugadaria@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-phone"></i></td>
+                    <td><b>Телефон</b>:</td>
+                    <td> +380 (63) 341 10 91 </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-map-marker"></i></td>
+                    <td><b>Адрес</b>:</td>
+                    <td> ул. Культуры 16-А, Харьков, Украина</td>
+                </tr>
+            </table>
+            <div align=center style="margin:20px 0px 0px 0px;">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=un9GEtnQMRcaRKO23bvQymi38ruYVszX&amp;width=700&amp;height=370&amp;lang=ru_UA&amp;sourceType=constructor&amp;scroll=true"></script>
+            </div>
+            <h2><b>Мы в социальных сетях:</b></h2>
+            <table width=100%>
+                <tr>
+                    <td width=5%><i class="fa fa-vk"></i></td>
+                    <td width=10%><b>Вконтакте</b>:</td>
+                    <td widtx=50%><a href="https://vk.com/kapriz_kh" title="Мы Вконтакте, клацай!">https://vk.com/echange_cybernetics</a></td>
+                </tr>
+                <tr>
+                    <td width=5%><i class="fa fa-instagram"></i></td>
+                    <td width=10%><b>Instagram</b>:</td>
+                    <td widtx=50%><a href="https://www.instagram.com/kapriz_kh/" title="Мы в инстаграме, подписывайся!">https://www.instagram.com/echange_cybernetics/</a></td>
+                </tr>
+                <tr>
+                    <td width=5%><i class="fa fa-facebook"></i></td>
+                    <td width=10%><b>Facebook</b>:</td>
+                    <td widtx=50%><a href="https://www.facebook.com/kaprizkharkiv" title="Мы в фейсбуке, клацай!">https://www.facebook.com/echange_cybernetics</a></td>
+                </tr>
+            </table>
+        </div>
+        <script src="up/js/easing.js" type="text/javascript"></script>
+        <script src="up/js/jquery.ui.totop.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /* Javasсript uptotop*/
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+            });
+        </script>
+        <script>
+            $(function () {
+                /* Javasсript перелистывание меню*/
+                var links = $('.sidebar-links > div');
+                links.on('click', function () {
+                    links.removeClass('selected');
+                    $(this).addClass('selected');
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>
